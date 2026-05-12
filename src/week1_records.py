@@ -17,7 +17,7 @@ def clean_record(record):
         "readmitted": record["readmitted"] == "Y"
     }
 
-print(clean_record(raw_record))
+#print(clean_record(raw_record))
 
 
 #All unique diagnosis codes across all records → should be a set
@@ -55,4 +55,48 @@ def func(records):
 }
     return unique_codes,count_pats,group_records
 
-print(func(records))
+#print(func(records))
+
+
+employees = [
+    {"name": "Alice", "department": "Engineering", "salary": 95000, "active": True},
+    {"name": "Bob", "department": "Marketing", "salary": 72000, "active": False},
+    {"name": "Carol", "department": "Engineering", "salary": 105000, "active": True},
+    {"name": "Dave", "department": "Marketing", "salary": 68000, "active": True},
+    {"name": "Eve", "department": "Engineering", "salary": 89000, "active": False},
+]
+
+def employee_agg(employeelist):
+    actives1=[element["name"] for element in employeelist if element["active"]==True]
+    actives2=[]
+    for elem in employeelist:
+        if elem["active"]==True:
+            actives2.append(elem["name"])
+    totalsal=sum([element["salary"] for element in employeelist if element["active"]==True])
+    groups={
+    depts: [r["name"] for r in employeelist if r["department"]==depts]
+    for depts in set(element["department"] for element in employeelist)
+
+    }
+    
+    return actives1,actives2,totalsal,groups
+
+
+
+print(employee_agg(employees))
+
+
+
+raw_order = {
+    "order_id": "  ORD-5521 ",
+    "customer": "jane doe",
+    "items": "burger, fries, soda",
+    "total": "29.99",
+    "delivered": "N"
+}
+
+def clean_order(order):
+    
+    return order['order_id'].strip(),order["customer"].title(),order["items"].split(","),float(order["total"]),order["delivered"]=="Y"
+
+print(clean_order(raw_order))
