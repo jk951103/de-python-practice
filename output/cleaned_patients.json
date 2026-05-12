@@ -1,0 +1,57 @@
+[
+    {
+        "patient_id": "P-1042",
+        "admit_date": "2024-01-15",
+        "discharge_date": "2024-01-18",
+        "diagnosis_codes": [
+            "I10",
+            "E11.9",
+            "Z79.4"
+        ],
+        "attending_physician": "Dr. Sarah Chen",
+        "readmitted": true
+    },
+    {
+        "patient_id": "P-1043",
+        "admit_date": "2024-02-01",
+        "discharge_date": "2024-02-03",
+        "diagnosis_codes": [
+            "I10",
+            "J45.0"
+        ],
+        "attending_physician": "Dr. James Park",
+        "readmitted": false
+    },
+    {
+        "patient_id": "P-1044",
+        "admit_date": "2024-03-10",
+        "discharge_date": "2024-03-15",
+        "diagnosis_codes": [
+            "Z79.4",
+            "E11.9"
+        ],
+        "attending_physician": "Dr. Sarah Chen",
+        "readmitted": true
+    },
+    {
+        "patient_id": "P-1045",
+        "admit_date": "2024-03-22",
+        "discharge_date": "2024-03-24",
+        "diagnosis_codes": [
+            "J45.0"
+        ],
+        "attending_physician": "Dr. James Park",
+        "readmitted": false
+    },
+    {
+        "patient_id": "P-1046",
+        "admit_date": "2024-04-01",
+        "discharge_date": "2024-04-05",
+        "diagnosis_codes": [
+            "I10",
+            "Z79.4"
+        ],
+        "attending_physician": "Dr. Sarah Chen",
+        "readmitted": true
+    }
+]

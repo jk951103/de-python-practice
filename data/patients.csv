@@ -1,0 +1,6 @@
+patient_id,admit_date,discharge_date,diagnosis_codes,attending_physician,readmitted
+P-1042,2024-01-15,2024-01-18,"I10,E11.9,Z79.4",Dr. Sarah Chen,Y
+P-1043,2024-02-01,2024-02-03,"I10,J45.0",Dr. James Park,N
+P-1044,2024-03-10,2024-03-15,"Z79.4,E11.9",Dr. Sarah Chen,Y
+P-1045,2024-03-22,2024-03-24,"J45.0",Dr. James Park,N
+P-1046,2024-04-01,2024-04-05,"I10,Z79.4",Dr. Sarah Chen,Y
